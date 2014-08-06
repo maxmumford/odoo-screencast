@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="holidays.holiday_demo" model="holidays.holiday">
+            <field name="name">My first record for model 'holidays.holiday'</field>
+        </record>
+
+    </data>
+</openerp>

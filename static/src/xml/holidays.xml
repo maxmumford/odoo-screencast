@@ -1,0 +1,7 @@
+<template>
+<t t-name="holidays.MyWidget">
+    <div class="oe_holidays">
+        Hello World!
+    </div>
+</t>
+</template>
