@@ -11,7 +11,7 @@
             <field name="type">ir.actions.act_window</field> 
             <field name="res_model">holidays.holiday</field> 
             <field name="view_type">form</field> 
-            <field name="view_mode">tree,form,graph</field> 
+            <field name="view_mode">tree,form,graph,kanban</field> 
         </record> 
 
         <menuitem action="action_menu_holiday" id="menu_holiday_action" parent="holidays.menu_holiday_model" /> 

@@ -27,5 +27,32 @@
             </field> 
         </record>
 
+        <record id="holidays.view_kanban_holiday" model="ir.ui.view"> 
+            <field name="name">holidays.holiday.kanban</field> 
+            <field name="model">holidays.holiday</field> 
+            <field name="type">kanban</field> 
+            <field name="arch" type="xml"> 
+                <kanban> 
+                    <!--list of field to be loaded --> 
+                    <field name="name" /> 
+                    <field name="maximum_guests" /> 
+
+                    <!-- kanban body --> 
+                    <templates> 
+                        <t t-name="kanban-box"> 
+                            <div class="oe_product_vignette oe_kanban_card oe_kanban_global_click" style="padding: 10px;"> 
+                                <div class="oe_product_desc"> 
+                                    <h4> 
+                                        <field name="name"></field>
+                                    </h4> 
+                                    Max Guests: <field name="maximum_guests"></field> 
+                                </div> 
+                            </div> 
+                        </t> 
+                    </templates> 
+                </kanban> 
+            </field> 
+        </record>
+
     </data> 
 </openerp>
