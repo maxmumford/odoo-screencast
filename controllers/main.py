@@ -8,3 +8,7 @@ class main(http.Controller):
         holiday_ids = pool['holidays.holiday'].search(cr, uid, [], context=context)
         holidays = pool['holidays.holiday'].browse(cr, uid, holiday_ids, context=context)
         return http.request.website.render('holidays.website_list', {'holidays': holidays})
+
+    @http.route('/holidays/<model("holidays.holiday"):holiday>', auth='public', website=True)
+    def show(self, holiday, **kw):
+        return http.request.website.render('holidays.website_show', {'holiday': holiday})

@@ -1,5 +1,6 @@
 <openerp> 
     <data> 
+
         <template id="holidays.website_list" name="Holidays Home"> 
             <t t-call="website.layout"> 
                 <div id="wrap"> 
@@ -17,5 +18,19 @@
                 </div> 
             </t> 
         </template> 
+
+        <template id="holidays.website_show" name="Holiday"> 
+            <t t-call="website.layout"> 
+                <div id="wrap"> 
+                    <div class="oe_holidays oe_editable">
+                        <div class="oe_structure">
+                            <h2>Holiday Information</h2>
+                        </div>
+                        Name: <span t-field="holiday.name" />
+                    </div> 
+                </div> 
+            </t> 
+        </template> 
+
     </data> 
 </openerp>
