@@ -22,6 +22,10 @@
     'depends': ["base", "website", "web"],
     'data': [
         "security/ir.model.access.csv",
+
+        "data/menu.xml",
+        "views/holiday.xml",
+
         "views/website.xml",
         "views/snippets.xml",
     ],

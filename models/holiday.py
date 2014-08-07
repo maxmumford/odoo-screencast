@@ -5,5 +5,6 @@ from openerp.fields import Char
 
 class holiday(Model):
     _name = "holidays.holiday"
+    _inherit = ['mail.thread']
 
     name = Char()

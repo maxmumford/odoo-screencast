@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<openerp> 
+    <data> 
+
+        <menuitem name="Holidays" id="holidays.menu_holiday" /> 
+
+        <menuitem id="holidays.menu_holiday_model" name="Holidays" parent="holidays.menu_holiday" /> 
+
+        <record id="action_menu_holiday" model="ir.actions.act_window"> 
+            <field name="name">Holidays</field> 
+            <field name="type">ir.actions.act_window</field> 
+            <field name="res_model">holidays.holiday</field> 
+            <field name="view_type">form</field> 
+            <field name="view_mode">tree,form</field> 
+        </record> 
+
+        <menuitem action="action_menu_holiday" id="menu_holiday_action" parent="holidays.menu_holiday_model" /> 
+
+    </data> 
+</openerp>

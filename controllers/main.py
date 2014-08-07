@@ -2,6 +2,7 @@
 from openerp import http
 
 class main(http.Controller):
+    
     @http.route('/holidays/main', auth='public', website=True)
     def index(self, **kw):
         cr, uid, context, pool = http.request.cr, http.request.uid, http.request.context, http.request.registry
