@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ["base", "website", "web"],
+    'depends': ["base", "website", "web", "sale", "website_sale"],
     'data': [
         "security/ir.model.access.csv",
 
