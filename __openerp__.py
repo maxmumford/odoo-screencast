@@ -23,6 +23,7 @@
     'data': [
         "security/ir.model.access.csv",
         "views/website.xml",
+        "views/snippets.xml",
     ],
 
     'demo': ["data/holidays_demo.xml"],

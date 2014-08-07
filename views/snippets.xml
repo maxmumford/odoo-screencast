@@ -1,0 +1,26 @@
+<openerp> 
+    <data> 
+
+        <template id="holidays.snippet" inherit_id="website.snippets" name="Warning Message"> 
+            <xpath expr="//div[@id='snippet_structure']" position="inside"> 
+                <div> 
+                    <!-- thumbnail --> 
+                    <div class="oe_snippet_thumbnail"> 
+                        <img class="oe_snippet_thumbnail_img" src="http://bit.ly/1rXvBRd" /> 
+                        <span class="oe_snippet_thumbnail_title">Warning Message</span> 
+                    </div> 
+
+                    <!-- body --> 
+                    <section class="oe_snippet_body mt_simple_snippet"> 
+                        <div class="container"> 
+                            <div class="alert alert-warning">
+                                Write your warning message here
+                            </div>
+                        </div> 
+                    </section> 
+                </div> 
+            </xpath> 
+        </template> 
+
+    </data> 
+</openerp>
