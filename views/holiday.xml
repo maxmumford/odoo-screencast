@@ -7,7 +7,7 @@
             <field name="arch" type="xml"> 
                 <form string="Holiday"> 
                     <field name="name" /> 
-
+                    <field name="maximum_guests" />
                     <div class="oe_chatter"> 
                         <field name="message_follower_ids" widget="mail_followers" /> 
                         <field name="message_ids" widget="mail_thread" /> 
@@ -15,6 +15,17 @@
                 </form> 
             </field> 
         </record> 
+
+        <record id="holidays.view_graph_holiday" model="ir.ui.view"> 
+            <field name="name">holidays.holiday.graph</field> 
+            <field name="model">holidays.holiday</field> 
+            <field name="arch" type="xml"> 
+                <graph string='Holiday'> 
+                    <field name='maximum_guests' type="measure"/> 
+                    <field name='name' type="row"/> 
+                </graph> 
+            </field> 
+        </record>
 
     </data> 
 </openerp>

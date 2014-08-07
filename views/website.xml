@@ -30,7 +30,8 @@
                         <div class="oe_structure">
                             <h2>Holiday Information</h2>
                         </div>
-                        Name: <span t-field="holiday.name" />
+                        <p>Name: <span t-field="holiday.name" /></p>
+                        <p>Maximum Guests: <span t-field="holiday.maximum_guests" /></p>
                     </div> 
                 </div> 
             </t> 
