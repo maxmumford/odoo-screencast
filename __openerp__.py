@@ -20,7 +20,10 @@
 
     # any module necessary for this one to work correctly
     'depends': ["base", "website", "web"],
-    'data': ["security/ir.model.access.csv"],
+    'data': [
+        "security/ir.model.access.csv",
+        "views/website.xml",
+    ],
 
     'demo': ["data/holidays_demo.xml"],
 

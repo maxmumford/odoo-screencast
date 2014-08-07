@@ -1,0 +1,21 @@
+<openerp> 
+    <data> 
+        <template id="holidays.website_list" name="Holidays Home"> 
+            <t t-call="website.layout"> 
+                <div id="wrap"> 
+                    <div class="oe_holidays oe_editable">
+                        <div class="oe_structure">
+                            <h2>Registered Holidays</h2>
+                        </div>
+                        <ul>
+                            <li t-foreach="holidays" t-as="holiday">
+                                <a t-att-href="holiday.id"><t t-esc="holiday.name" /></a>
+                            </li>
+                        </ul>
+                        <div class="oe_structure" />
+                    </div> 
+                </div> 
+            </t> 
+        </template> 
+    </data> 
+</openerp>
