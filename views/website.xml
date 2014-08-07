@@ -13,6 +13,10 @@
                                 <a t-att-href="holiday.id"><t t-esc="holiday.name" /></a>
                             </li>
                         </ul>
+                        <h3>Create New</h3>
+                        <form action="/holidays/new" method="post">
+                            <input type="text" placeholder="Holiday Name" name="name" /><input type="submit" value="Create" />
+                        </form>
                         <div class="oe_structure" />
                     </div> 
                 </div> 
